@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@900&family=Nunito:wght@200&display=swap');
 
 *{
@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-  font-size: 9.6rem;
+  font-size: 7.6rem;
   font-family: 'Lobster', sans-serif;
   letter-spacing: 16.5px;
     MARGIN: 41px 0;
@@ -40,11 +40,22 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   perspective: 1000px;
   perspective-origin: 50% 50%;
   animation: animation 100s linear infinite;
   padding: 0 2cm 2cm;
+}
+.contenedor-img {
+  color: #eee;
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding:  2cm 2cm;
+  height: 60vh;
+
 }
 
 p{
@@ -62,26 +73,82 @@ p{
   color: #1e7dbc;
 text-align: center;
 animation: mover-title 1.5s infinite  alternate;
-font-family: 'Lobster', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 
 
 }
 
 
-.wrapper img:nth-child(1){
+.wrapper .contenedor-img img:nth-child(1){
   position: absolute;
   z-index: 1;
   filter: drop-shadow(0px 0px 10px   #1e7dbc);
   -webkit-animation: mover 1.5s infinite  alternate;
   animation: mover 1.5s infinite  alternate;
-  
+  width: 50%;
+  margin-bottom: 2cm;
+
 }
 
-.wrapper img:nth-child(2){
+.wrapper  .contenedor-img  img:nth-child(2){
   z-index: -1;
   position: absolute;
 }
+@media (max-width: 1000px) {
+  .title {
+    font-size: 7.6rem;
+  }
+  .wrapper .contenedor-img img:nth-child(1){
+    margin-bottom: 2cm;
+    width: 70%;
+    align-items: center;
 
+  }
+  .wrapper 
+  {
+    align-items: center;
+    height: 60vh;
+  }
+  .wrapper  .contenedor-img  img:nth-child(2){
+    width: 100%;
+  }
+  .wrapper-2 p img{
+    width: 60%;
+  }
+  .wrapper-2 p {
+    font-size: 2cm;
+  }
+}
+@media (max-width: 780px) {
+    .title {
+    font-size: 5.6rem;
+  }
+  .wrapper .contenedor-img img:nth-child(1){
+    width: 80%;
+    margin-bottom: 1cm;
+  }
+    .wrapper  .contenedor-img  img:nth-child(2){
+    width: 100%;
+  }
+  .wrapper-2 p img{
+    width: 50%;
+  }
+  .wrapper-2 p {
+    font-size: 1cm;
+  }
+}
+@media (max-width: 650px) {
+    .title {
+    font-size: 3.6rem;
+  }
+  .wrapper .contenedor-img img:nth-child(1){
+    width: 90%;
+    margin-bottom: 1cm;
+  }
+    .wrapper  .contenedor-img  img:nth-child(2){
+    width: 100%;
+  }
+}
 
 @keyframes animation {
   100%{
