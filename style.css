@@ -58,8 +58,12 @@ p{
   border: 1px solid rgba(255, 255, 255, 0.07);
   box-shadow:0px 0px 18px   #1e7dbc;
   text-transform: uppercase;
-  color: #dca46c;
+  color: #1e7dbc;
 text-align: center;
+animation: mover-title 1.5s infinite  alternate;
+font-family: 'Lobster', sans-serif;
+
+
 }
 
 
